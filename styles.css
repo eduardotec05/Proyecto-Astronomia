@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.blog-cards {
+    padding: 50px;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.title-noticias {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px; /* Separación del título y las cards */
+    color: #333;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+
+/* Estilos para las cards */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.card-content .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card-content .read-more {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-content .read-more:hover {
+    text-decoration: underline;
+}
