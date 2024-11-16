@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <section class="blog-cards">
+
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo y Links en una misma línea -->
+            <div class="logo-and-links">
+                <img src="./LogoAstronomy.jpg" alt="Logo Astro Explora" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero / Navbar -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Explora el Universo</h1>
+            <p>Sumérgete en los misterios del cosmos y descubre las maravillas que nos rodean.</p>
+            <a href="#aprende-mas" class="cta-button">Aprende Más</a>
+        </div>
+    </header>
+
+    <!-- Sección aprender más -->
+    <section class="learn-more">
+        <div class="container">
+            <div class="image-text-container">
+                <!-- Imagen -->
+                <div class="image-container">
+                    <img src="https://png.pngtree.com/png-clipart/20230322/original/pngtree-realistic-astronaut-illustration-png-image_8999483.png" alt="Imagen del universo" class="learn-more-image">
+                </div>
+    
+                <!-- Texto informativo -->
+                <div class="text-container">
+                    <p>La astronomía nos permite mirar más allá de nuestra Tierra, revelando los secretos del cosmos. Desde los agujeros negros hasta las estrellas más lejanas, cada descubrimiento abre una nueva puerta al conocimiento.</p>
+                    <ul>
+                        <li><strong>La Vía Láctea:</strong> Nuestra galaxia, un vasto sistema con más de 200 mil millones de estrellas.</li>
+                        <li><strong>Agujeros negros:</strong> Objetos con tal densidad que ni la luz puede escapar.</li>
+                        <li><strong>Exoplanetas:</strong> Planetas en otras estrellas que podrían ser habitables.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Noticias -->
+    <section class="blog-cards" id="noticias">
         <h2 class="title-noticias">Noticias Interesantes</h2>
         <div class="cards-container">
             <div class="card">
@@ -49,5 +97,43 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">    
+            <!-- Columna 1: Logo y descripción -->
+            <div class="footer-column">
+                <img src="./LogoAstronomy.jpg" alt="Logo AstroExplora" class="footer-logo">
+                <p>Sumérgete en los misterios del universo con nosotros.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-column">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#galaxias">Galaxias</a></li>
+                    <li><a href="#planetas">Planetas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        
+            <!-- Columna 3: Redes sociales -->
+            <div class="footer-column">
+                <h4>Síguenos</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-separator">
+        <!-- Información legal -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 AstroExplora. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
